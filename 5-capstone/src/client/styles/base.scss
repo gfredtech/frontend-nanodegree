@@ -1,0 +1,98 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto+Slab|Open+Sans:400italic,700italic,400,700);
+
+
+
+/* Site-wide design */
+$primary-color: #a14329;
+$secondary-color: #bb9236;
+$background-color: #a3b4a4;
+$button-hover-color: #667467;
+$text-color: #130c1e;
+$text-hover-color: #fff;
+$border-radius: 10px;
+$bg-color: #cecaca;
+$font-body: 'Roboto Slab', serif; 
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: $bg-color;
+    font-family: $font-body;
+}
+
+main {
+    flex: 2;
+}
+
+section {
+    max-width: 800px;
+    margin: 50px auto;
+    
+    #section-results {
+        h1 {
+            margin-bottom: 20px;
+            font-size: 1.2rem;
+        }
+
+        .results {
+            margin-bottom: 10px;
+        }
+    }
+}
+
+.container {
+    text-align: center;
+    padding-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label {
+    padding-bottom: 10px;
+}
+
+#trip {
+    justify-content: center;
+    text-align: center;
+}
+
+#city {
+    padding: 10px 0;
+    text-align: center;
+    font-size: 1em;
+    width: 160px;
+}
+
+#date {
+    padding: 10px;
+    width: 160px;
+    // width: 100%;
+    font-size: 1em;
+}
+
+h2 {
+    padding-bottom: 20px;
+}
+
+h3 {
+    padding-bottom: 10px;
+    font-size: 1.5em;
+}
+
+#weatherHolder {
+    padding-bottom: 10px;
+}
+
+.btn {
+    margin-top: 20px;
+    padding: 20px 40px;
+    border-radius: 5px;
+    font-size: 1em;
+
+    &:hover {
+        background-color: $button-hover-color;
+        color: $text-hover-color;
+    }
+}

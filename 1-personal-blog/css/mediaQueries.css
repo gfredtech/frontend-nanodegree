@@ -1,0 +1,148 @@
+
+@media (max-width: 900px){
+    .spaced{
+        padding: 10px 20px;
+    }
+    
+    header{
+        padding-top: 25px !important;
+        padding-bottom: 25px !important;
+    }
+    
+    .hero > .slide .inner{
+        text-align: center;
+        width: 90%;
+        padding: 100px;
+        color: #fff;
+    }
+
+    .cards{
+        justify-content: space-around;
+    }
+}
+
+
+@media (max-width: 720px){
+    .blog-post{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr min-content min-content;
+        grid-template-areas: 
+        "post"
+        "author"
+        "sidebar";
+        min-height: 100vh;
+    }
+    
+.blog-post.spaced{
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+    .post main{
+        padding: 0 20px;
+        padding-bottom: 50px;
+    }
+
+    .author{
+        padding: 20px;
+    }
+
+    .sidebar{
+        padding: 20px;
+    }
+}
+
+@media(max-width: 500px){
+    .spaced{
+        padding: 10px 0px;
+    }
+
+    header.spaced{
+        padding: 10px 20px;
+    }
+    
+    .logo{
+        font-size: 18px;
+    }
+
+    .logo i{
+        font-size: 35px;
+    }
+
+    header nav a{
+        font-size: 14px;
+    }
+    
+    header nav a:nth-child(n + 2){
+        margin-left: 10px;
+    }
+
+    .hero > .slide .inner{
+        width: 90%;
+        padding: 20px;
+    }
+}
+
+@media(max-width: 400px){
+    p, li{
+        word-spacing: 5px;
+        line-height: 25px;
+        font-size: 13px;
+        color: #555;
+    }
+
+    header{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+    }
+
+    header.spaced{
+        padding: 0 0 !important;
+    }
+
+    header nav{
+        border-top: 1px solid #eee;
+        padding: 10px;
+        width: 100%;
+        text-align: center;
+        display: flex;
+        justify-content: space-around;
+    }
+    header .logo{
+        padding: 10px;
+    }
+    header nav a{
+        font-size: 12px;
+    }
+
+    
+    .post .header h1{
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    .post .text-block img{
+        float: none;
+        display: block;
+        border-radius: 0px;
+        -webkit-border-radius: 0px;
+        -moz-border-radius: 0px;
+        -ms-border-radius: 0px;
+        -o-border-radius: 0px;
+        width: 100%;
+        margin: 5px 0;
+}
+
+    .author{
+        padding: 20px;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .author .picture{
+        margin: 20px;
+    }
+}

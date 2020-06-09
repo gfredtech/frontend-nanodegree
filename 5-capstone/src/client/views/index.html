@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Travel App</title>
+    <script
+      src="https://kit.fontawesome.com/ff2daef84b.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <div id="banner">
+        Trip Planner
+      </div>
+      <div id="logo">
+        <i class="fas fa-suitcase"></i>
+      </div>
+    </header>
+    <main class="app">
+      <section id="form">
+        <div class="container city">
+          <label for="city">Enter City:</label>
+          <input type="text" id="city" placeholder="enter city here" />
+        </div>
+        <div class="container date">
+          <label for="date">Enter trip date:</label>
+          <input type="date" id="date" min="2020-01-01" max="2022-12-31" />
+          <button id="addtrip" type="submit" class="btn">Save Trip</button>
+        </div>
+      </section>
+      <section id="trip">
+        <div id="photo"></div>
+        <h2 id="trip-header">Saved trip:</h2>
+        <div class="container city">
+          <h3 id="destination"></h3>
+          <h3 id="tripdate"></h3>
+        </div>
+        <div class="container countdown" id="cd-container">
+          <h3>Countdown</h3>
+          <div id="countdown"></div>
+        </div>
+        <div class="container weather" id="weather-container">
+          <h3>Weather forecasted to be</h3>
+          <div id="weatherHolder">
+            <div class="weather" id="high"></div>
+            <div class="weather" id="low"></div>
+            <div class="weather" id="summary"></div>
+          </div>
+          <a href="https://darksky.net/poweredby/">Powered by DarkSky</a>
+          <button id="deletetrip" type="submit" class="btn">Delete Trip</button>
+        </div>
+      </section>
+    </main>
+    <footer>
+      &copy; Udacity FEND * All Rights Reserved
+    </footer>
+    <script>
+      if ("serviceWorker" in navigator) {
+        window.addEventListener("load", () => {
+          navigator.serviceWorker.register("/service-worker.js");
+        });
+      }
+    </script>
+  </body>
+</html>
